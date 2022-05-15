@@ -16,6 +16,15 @@ spring:
               args:
                 name: CATALOG-SERVICE
                 fallbackUri: forward:/catalogServiceFallback
+        - id: IDENTITY-SERVICE
+          uri: lb://IDENTITY-SERVICE
+          predicates:
+            - Path=/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: IDENTITY-SERVICE
+                fallbackUri: forward:/catalogServiceFallback        
 
 hystrix.command.fallbackcmd.execution.isolation.thread.timeoutInMilliseconds: 5000
 
