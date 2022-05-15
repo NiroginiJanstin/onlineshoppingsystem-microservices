@@ -13,3 +13,4 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
   instance:
     hostname: localhost
+    instance-id: ${spring.application.na  me}:${random.value}

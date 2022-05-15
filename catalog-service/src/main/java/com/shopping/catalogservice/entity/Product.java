@@ -10,9 +10,16 @@ public class Product {
     private String productName;
     private String productImageUrl;
     private int qty;
-    private Float discountPercentage;
-    private String inventoryCode;
+    private Float discount;
     private String categoryId;
+
+    public Product(String productName, String productImageUrl, int qty, Float discount, String categoryId) {
+        this.productName = productName;
+        this.productImageUrl = productImageUrl;
+        this.qty = qty;
+        this.discount = discount;
+        this.categoryId = categoryId;
+    }
 
     public String getProductId() {
         return productId;
@@ -46,20 +53,12 @@ public class Product {
         this.qty = qty;
     }
 
-    public Float getDiscountPercentage() {
-        return discountPercentage;
+    public Float getDiscount() {
+        return discount;
     }
 
-    public void setDiscountPercentage(Float discountPercentage) {
-        this.discountPercentage = discountPercentage;
-    }
-
-    public String getInventoryCode() {
-        return inventoryCode;
-    }
-
-    public void setInventoryCode(String inventoryCode) {
-        this.inventoryCode = inventoryCode;
+    public void setDiscount(Float discount) {
+        this.discount = discount;
     }
 
     public String getCategoryId() {

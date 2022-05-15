@@ -2,6 +2,7 @@ package com.shopping.apigateway;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -13,7 +14,7 @@ public class FallbackController {
     }
 
     @HystrixCommand
-    @GetMapping("/catalogServiceFallback")
+    @RequestMapping("/catalogServiceFallback")
     public String catalogServiceFallBackMethod(){
         return "Catalog service is taking long than expected."+" Please try again later";
     }

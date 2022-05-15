@@ -25,11 +25,52 @@ public class CategoryController {
         return "Welcome to category controller!";
     }
 
-    @PostMapping("/saveCategory")
+    @PostMapping("/save")
     public ResponseEntity<CategoryResponseModel> createCategory(@RequestBody Category category) {
         try{
             logger.info("Start calling category service"+category);
-            return new ResponseEntity<>(categoryService.createNew(category), HttpStatus.OK);
+            return new ResponseEntity<>(categoryService.create(category), HttpStatus.OK);
+        }
+        catch (Exception e){
+            return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @GetMapping("/getById/{id}")
+    public ResponseEntity<CategoryResponseModel> getCategoryById(@PathVariable("id") String categoryId) {
+        try{
+            return new ResponseEntity<>(categoryService.getById(categoryId), HttpStatus.OK);
+        }
+        catch (Exception e){
+            return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @PutMapping("/update/{id}")
+    public ResponseEntity<CategoryResponseModel> updateCategory(@PathVariable("id") String categoryId, @RequestBody Category category) {
+        try{
+            return new ResponseEntity<>(categoryService.update(categoryId,category), HttpStatus.OK);
+        }
+        catch (Exception e){
+            return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<CategoryResponseModel> deleteCategory(@PathVariable("id") String categoryId) {
+        try{
+            return new ResponseEntity<>(categoryService.delete(categoryId), HttpStatus.OK);
+        }
+        catch (Exception e){
+            return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @DeleteMapping("/deleteAll")
+    public ResponseEntity<String> deleteCategories() {
+        try{
+            return new ResponseEntity<>(categoryService.deleteAll(), HttpStatus.OK);
         }
         catch (Exception e){
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
