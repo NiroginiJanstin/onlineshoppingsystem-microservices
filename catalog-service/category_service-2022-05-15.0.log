@@ -4801,6 +4801,14 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
+<<<<<<< HEAD
+2022-05-16 00:00:50.878 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-16 00:00:50.879 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-16 00:00:50.882 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-16 00:00:50.883 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-16 00:00:51.108  WARN 26132 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
+2022-05-16 00:00:51.109 ERROR 26132 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:5e56c1a7c699fb931e3715c691f2b526 - was unable to send heartbeat!
+=======
 2022-05-15 23:38:34.944 DEBUG 26132 --- [http-nio-9001-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/catalog/category/save", parameters={}
 2022-05-15 23:38:34.946 DEBUG 26132 --- [http-nio-9001-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shopping.catalogservice.controller.CategoryController#createCategory(Category)
 2022-05-15 23:38:34.948 DEBUG 26132 --- [http-nio-9001-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.shopping.catalogservice.entity.Category@768f69d4]
@@ -4813,6 +4821,7 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2022-05-15 23:38:50.055 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
 2022-05-15 23:38:50.120  WARN 26132 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
 2022-05-15 23:38:50.121 ERROR 26132 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:5e56c1a7c699fb931e3715c691f2b526 - was unable to send heartbeat!
+>>>>>>> 28f656a82f8e052c4944f9810aaf7182a3113c19
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
@@ -4828,12 +4837,21 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
+<<<<<<< HEAD
+2022-05-16 00:01:20.900 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-16 00:01:20.901 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-16 00:01:20.904 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-16 00:01:20.904 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-16 00:01:21.123  WARN 26132 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
+2022-05-16 00:01:21.123 ERROR 26132 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:5e56c1a7c699fb931e3715c691f2b526 - was unable to send heartbeat!
+=======
 2022-05-15 23:39:20.072 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
 2022-05-15 23:39:20.074 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
 2022-05-15 23:39:20.078 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
 2022-05-15 23:39:20.079 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
 2022-05-15 23:39:20.143  WARN 26132 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
 2022-05-15 23:39:20.144 ERROR 26132 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:5e56c1a7c699fb931e3715c691f2b526 - was unable to send heartbeat!
+>>>>>>> 28f656a82f8e052c4944f9810aaf7182a3113c19
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
@@ -4849,12 +4867,21 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
+<<<<<<< HEAD
+2022-05-16 00:01:50.913 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-16 00:01:50.914 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-16 00:01:50.917 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-16 00:01:50.917 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-16 00:01:51.137  WARN 26132 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
+2022-05-16 00:01:51.137 ERROR 26132 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:5e56c1a7c699fb931e3715c691f2b526 - was unable to send heartbeat!
+=======
 2022-05-15 23:39:50.097 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
 2022-05-15 23:39:50.099 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
 2022-05-15 23:39:50.106 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
 2022-05-15 23:39:50.106 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
 2022-05-15 23:39:50.176  WARN 26132 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
 2022-05-15 23:39:50.177 ERROR 26132 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:5e56c1a7c699fb931e3715c691f2b526 - was unable to send heartbeat!
+>>>>>>> 28f656a82f8e052c4944f9810aaf7182a3113c19
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
@@ -4870,6 +4897,73 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
+<<<<<<< HEAD
+2022-05-16 00:03:08.739  WARN 27384 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-16 00:03:08.859  WARN 27384 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-16 00:03:08.975  WARN 27384 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productController': Unsatisfied dependency expressed through field 'productService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.shopping.catalogservice.service.IProductService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-05-16 00:03:09.021 ERROR 27384 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field productService in com.shopping.catalogservice.controller.ProductController required a bean of type 'com.shopping.catalogservice.service.IProductService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.shopping.catalogservice.service.IProductService' in your configuration.
+
+2022-05-16 00:13:32.250  WARN 29748 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-16 00:13:32.387  WARN 29748 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-16 00:13:32.485  WARN 29748 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productController': Unsatisfied dependency expressed through field 'productService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.shopping.catalogservice.service.IProductService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-05-16 00:13:32.520 ERROR 29748 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field productService in com.shopping.catalogservice.controller.ProductController required a bean of type 'com.shopping.catalogservice.service.IProductService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.shopping.catalogservice.service.IProductService' in your configuration.
+
+2022-05-16 00:17:06.442  WARN 24440 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-16 00:17:06.568  WARN 24440 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-16 00:17:06.700  WARN 24440 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-16 00:17:06.793 DEBUG 24440 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-05-16 00:17:06.855 DEBUG 24440 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 12 mappings in 'requestMappingHandlerMapping'
+2022-05-16 00:17:06.879 DEBUG 24440 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-05-16 00:17:06.887 DEBUG 24440 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-05-16 00:17:07.388  WARN 24440 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-05-16 00:17:07.636 DEBUG 24440 --- [main] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/
+2022-05-16 00:17:07.722 DEBUG 24440 --- [main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-16 00:17:07.758 DEBUG 24440 --- [main] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-16 00:17:07.759 DEBUG 24440 --- [main] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-16 00:17:07.823 DEBUG 24440 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8761/eureka/apps/CATALOG-SERVICE
+2022-05-16 00:17:07.826 DEBUG 24440 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-16 00:17:07.841 DEBUG 24440 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Writing [InstanceInfo [instanceId = ${spring.application.na  me}:2821825664b3754344102cf29273a745, appName = CATALOG-SERVICE, hostName = localhost, status = UP, ipAddr = 192.168.8.101, port = 9001, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@270097ce] as "application/json"
+2022-05-16 00:17:07.863 DEBUG 24440 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Response 204 NO_CONTENT
+2022-05-16 00:17:37.799 DEBUG 24440 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-16 00:17:37.799 DEBUG 24440 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-16 00:17:37.803 DEBUG 24440 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-16 00:17:37.803 DEBUG 24440 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-16 00:17:37.803  WARN 24440 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
+2022-05-16 00:17:37.811  WARN 24440 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
+2022-05-16 00:17:37.815 ERROR 24440 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:2821825664b3754344102cf29273a745 - was unable to send heartbeat!
+=======
 2022-05-15 23:40:20.125 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
 2022-05-15 23:40:20.127 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
 2022-05-15 23:40:20.132 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
@@ -5233,6 +5327,7 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2022-05-15 23:48:50.440 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
 2022-05-15 23:48:50.596  WARN 26132 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
 2022-05-15 23:48:50.596 ERROR 26132 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:5e56c1a7c699fb931e3715c691f2b526 - was unable to send heartbeat!
+>>>>>>> 28f656a82f8e052c4944f9810aaf7182a3113c19
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
@@ -5248,12 +5343,52 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
+<<<<<<< HEAD
+2022-05-16 00:17:42.647  INFO 24440 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-16 00:17:42.648 DEBUG 24440 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-05-16 00:17:42.648 DEBUG 24440 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-05-16 00:17:42.649 DEBUG 24440 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-05-16 00:17:42.650 DEBUG 24440 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6c851821
+2022-05-16 00:17:42.650 DEBUG 24440 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@6a5c2d2d
+2022-05-16 00:17:42.650 DEBUG 24440 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-05-16 00:17:42.651  INFO 24440 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-05-16 00:17:42.662 DEBUG 24440 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/catalog/product/", parameters={}
+2022-05-16 00:17:42.667 DEBUG 24440 --- [http-nio-9001-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shopping.catalogservice.controller.ProductController#productController()
+2022-05-16 00:17:42.750 DEBUG 24440 --- [http-nio-9001-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-05-16 00:17:42.750 DEBUG 24440 --- [http-nio-9001-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Welcome to product controller!"]
+2022-05-16 00:17:42.759 DEBUG 24440 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-05-16 00:17:45.617 DEBUG 24440 --- [http-nio-9001-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/catalog/product/save", parameters={}
+2022-05-16 00:17:45.618 DEBUG 24440 --- [http-nio-9001-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shopping.catalogservice.controller.ProductController#createCategory(Product)
+2022-05-16 00:17:45.625 DEBUG 24440 --- [http-nio-9001-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.shopping.catalogservice.entity.Product@4fca2d96]
+2022-05-16 00:17:47.896 DEBUG 24440 --- [http-nio-9001-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-16 00:17:47.897 DEBUG 24440 --- [http-nio-9001-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.shopping.catalogservice.model.ProductResponseModel@36ab57bc]
+2022-05-16 00:17:47.898 DEBUG 24440 --- [http-nio-9001-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-05-16 00:17:52.287 DEBUG 24440 --- [http-nio-9001-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/catalog/product/save", parameters={}
+2022-05-16 00:17:52.289 DEBUG 24440 --- [http-nio-9001-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shopping.catalogservice.controller.ProductController#createCategory(Product)
+2022-05-16 00:17:52.291 DEBUG 24440 --- [http-nio-9001-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.shopping.catalogservice.entity.Product@6ed05157]
+2022-05-16 00:17:52.591 DEBUG 24440 --- [http-nio-9001-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-16 00:17:52.592 DEBUG 24440 --- [http-nio-9001-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.shopping.catalogservice.model.ProductResponseModel@212ab8c6]
+2022-05-16 00:17:52.594 DEBUG 24440 --- [http-nio-9001-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-05-16 00:18:02.494 DEBUG 24440 --- [http-nio-9001-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/catalog/product/save", parameters={}
+2022-05-16 00:18:02.494 DEBUG 24440 --- [http-nio-9001-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shopping.catalogservice.controller.ProductController#createCategory(Product)
+2022-05-16 00:18:02.495 DEBUG 24440 --- [http-nio-9001-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.shopping.catalogservice.entity.Product@287aa0a1]
+2022-05-16 00:18:02.788 DEBUG 24440 --- [http-nio-9001-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-16 00:18:02.789 DEBUG 24440 --- [http-nio-9001-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.shopping.catalogservice.model.ProductResponseModel@26bd4bde]
+2022-05-16 00:18:02.790 DEBUG 24440 --- [http-nio-9001-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-05-16 00:18:07.808 DEBUG 24440 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-16 00:18:07.811 DEBUG 24440 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-16 00:18:07.817 DEBUG 24440 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-16 00:18:07.818 DEBUG 24440 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-16 00:18:07.839  WARN 24440 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
+2022-05-16 00:18:07.840 ERROR 24440 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:2821825664b3754344102cf29273a745 - was unable to send heartbeat!
+=======
 2022-05-15 23:49:20.453 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
 2022-05-15 23:49:20.454 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
 2022-05-15 23:49:20.458 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
 2022-05-15 23:49:20.458 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
 2022-05-15 23:49:20.617  WARN 26132 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
 2022-05-15 23:49:20.618 ERROR 26132 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:5e56c1a7c699fb931e3715c691f2b526 - was unable to send heartbeat!
+>>>>>>> 28f656a82f8e052c4944f9810aaf7182a3113c19
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
@@ -5269,12 +5404,27 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
+<<<<<<< HEAD
+2022-05-16 00:18:22.323 DEBUG 24440 --- [http-nio-9001-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/catalog/product/save", parameters={}
+2022-05-16 00:18:22.323 DEBUG 24440 --- [http-nio-9001-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shopping.catalogservice.controller.ProductController#createCategory(Product)
+2022-05-16 00:18:22.324 DEBUG 24440 --- [http-nio-9001-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.shopping.catalogservice.entity.Product@6dc5c687]
+2022-05-16 00:18:22.612 DEBUG 24440 --- [http-nio-9001-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-16 00:18:22.613 DEBUG 24440 --- [http-nio-9001-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.shopping.catalogservice.model.ProductResponseModel@6302354f]
+2022-05-16 00:18:22.614 DEBUG 24440 --- [http-nio-9001-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-05-16 00:18:37.827 DEBUG 24440 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-16 00:18:37.829 DEBUG 24440 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-16 00:18:37.835 DEBUG 24440 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-16 00:18:37.836 DEBUG 24440 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-16 00:18:37.851  WARN 24440 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
+2022-05-16 00:18:37.852 ERROR 24440 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:2821825664b3754344102cf29273a745 - was unable to send heartbeat!
+=======
 2022-05-15 23:49:50.466 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
 2022-05-15 23:49:50.467 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
 2022-05-15 23:49:50.471 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
 2022-05-15 23:49:50.471 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
 2022-05-15 23:49:50.637  WARN 26132 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
 2022-05-15 23:49:50.637 ERROR 26132 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:5e56c1a7c699fb931e3715c691f2b526 - was unable to send heartbeat!
+>>>>>>> 28f656a82f8e052c4944f9810aaf7182a3113c19
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
@@ -5290,12 +5440,21 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
+<<<<<<< HEAD
+2022-05-16 00:19:07.843 DEBUG 24440 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-16 00:19:07.844 DEBUG 24440 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-16 00:19:07.848 DEBUG 24440 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-16 00:19:07.849 DEBUG 24440 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-16 00:19:07.865  WARN 24440 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
+2022-05-16 00:19:07.865 ERROR 24440 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:2821825664b3754344102cf29273a745 - was unable to send heartbeat!
+=======
 2022-05-15 23:50:20.477 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
 2022-05-15 23:50:20.478 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
 2022-05-15 23:50:20.482 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
 2022-05-15 23:50:20.483 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
 2022-05-15 23:50:20.657  WARN 26132 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
 2022-05-15 23:50:20.658 ERROR 26132 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:5e56c1a7c699fb931e3715c691f2b526 - was unable to send heartbeat!
+>>>>>>> 28f656a82f8e052c4944f9810aaf7182a3113c19
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
@@ -5311,12 +5470,21 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
+<<<<<<< HEAD
+2022-05-16 00:19:37.859 DEBUG 24440 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-16 00:19:37.860 DEBUG 24440 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-16 00:19:37.863 DEBUG 24440 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-16 00:19:37.864 DEBUG 24440 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-16 00:19:37.881  WARN 24440 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
+2022-05-16 00:19:37.882 ERROR 24440 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:2821825664b3754344102cf29273a745 - was unable to send heartbeat!
+=======
 2022-05-15 23:50:50.488 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
 2022-05-15 23:50:50.489 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
 2022-05-15 23:50:50.493 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
 2022-05-15 23:50:50.493 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
 2022-05-15 23:50:50.681  WARN 26132 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
 2022-05-15 23:50:50.682 ERROR 26132 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:5e56c1a7c699fb931e3715c691f2b526 - was unable to send heartbeat!
+>>>>>>> 28f656a82f8e052c4944f9810aaf7182a3113c19
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
@@ -5332,12 +5500,21 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
+<<<<<<< HEAD
+2022-05-16 00:20:07.868 DEBUG 24440 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-16 00:20:07.869 DEBUG 24440 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-16 00:20:07.871 DEBUG 24440 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-16 00:20:07.872 DEBUG 24440 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-16 00:20:07.889  WARN 24440 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
+2022-05-16 00:20:07.889 ERROR 24440 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:2821825664b3754344102cf29273a745 - was unable to send heartbeat!
+=======
 2022-05-15 23:51:20.534 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
 2022-05-15 23:51:20.556 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
 2022-05-15 23:51:20.561 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
 2022-05-15 23:51:20.562 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
 2022-05-15 23:51:20.709  WARN 26132 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
 2022-05-15 23:51:20.710 ERROR 26132 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:5e56c1a7c699fb931e3715c691f2b526 - was unable to send heartbeat!
+>>>>>>> 28f656a82f8e052c4944f9810aaf7182a3113c19
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
@@ -5353,12 +5530,21 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
+<<<<<<< HEAD
+2022-05-16 00:20:37.874 DEBUG 24440 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-16 00:20:37.875 DEBUG 24440 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-16 00:20:37.877 DEBUG 24440 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-16 00:20:37.878 DEBUG 24440 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-16 00:20:37.909  WARN 24440 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
+2022-05-16 00:20:37.910 ERROR 24440 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:2821825664b3754344102cf29273a745 - was unable to send heartbeat!
+=======
 2022-05-15 23:51:50.566 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
 2022-05-15 23:51:50.568 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
 2022-05-15 23:51:50.574 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
 2022-05-15 23:51:50.574 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
 2022-05-15 23:51:50.737  WARN 26132 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
 2022-05-15 23:51:50.738 ERROR 26132 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:5e56c1a7c699fb931e3715c691f2b526 - was unable to send heartbeat!
+>>>>>>> 28f656a82f8e052c4944f9810aaf7182a3113c19
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
@@ -5374,12 +5560,38 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
+<<<<<<< HEAD
+2022-05-16 00:21:32.637  WARN 25708 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-16 00:21:32.760  WARN 25708 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-16 00:21:32.891  WARN 25708 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-16 00:21:32.986 DEBUG 25708 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-05-16 00:21:33.047 DEBUG 25708 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 13 mappings in 'requestMappingHandlerMapping'
+2022-05-16 00:21:33.070 DEBUG 25708 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-05-16 00:21:33.077 DEBUG 25708 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-05-16 00:21:33.586  WARN 25708 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-05-16 00:21:33.823 DEBUG 25708 --- [main] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/
+2022-05-16 00:21:33.920 DEBUG 25708 --- [main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-16 00:21:33.967 DEBUG 25708 --- [main] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-16 00:21:33.968 DEBUG 25708 --- [main] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-16 00:21:34.027 DEBUG 25708 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8761/eureka/apps/CATALOG-SERVICE
+2022-05-16 00:21:34.028 DEBUG 25708 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-16 00:21:34.045 DEBUG 25708 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Writing [InstanceInfo [instanceId = ${spring.application.na  me}:3869e8e047a9bf13bc295809910478e6, appName = CATALOG-SERVICE, hostName = localhost, status = UP, ipAddr = 192.168.8.101, port = 9001, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@270097ce] as "application/json"
+2022-05-16 00:21:34.067 DEBUG 25708 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Response 204 NO_CONTENT
+2022-05-16 00:22:04.000 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-16 00:22:04.003 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-16 00:22:04.010 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-16 00:22:04.012 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-16 00:22:04.025  WARN 25708 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
+2022-05-16 00:22:04.039  WARN 25708 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
+2022-05-16 00:22:04.045 ERROR 25708 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:3869e8e047a9bf13bc295809910478e6 - was unable to send heartbeat!
+=======
 2022-05-15 23:52:20.581 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
 2022-05-15 23:52:20.582 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
 2022-05-15 23:52:20.586 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
 2022-05-15 23:52:20.587 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
 2022-05-15 23:52:20.773  WARN 26132 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
 2022-05-15 23:52:20.774 ERROR 26132 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:5e56c1a7c699fb931e3715c691f2b526 - was unable to send heartbeat!
+>>>>>>> 28f656a82f8e052c4944f9810aaf7182a3113c19
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
@@ -5395,12 +5607,39 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
+<<<<<<< HEAD
+2022-05-16 00:22:16.414  INFO 25708 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-16 00:22:16.415 DEBUG 25708 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-05-16 00:22:16.415 DEBUG 25708 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-05-16 00:22:16.415 DEBUG 25708 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-05-16 00:22:16.416 DEBUG 25708 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6c851821
+2022-05-16 00:22:16.416 DEBUG 25708 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@6a5c2d2d
+2022-05-16 00:22:16.416 DEBUG 25708 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-05-16 00:22:16.417  INFO 25708 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-05-16 00:22:16.428 DEBUG 25708 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : DELETE "/catalog/category/deleteAll", parameters={}
+2022-05-16 00:22:16.434 DEBUG 25708 --- [http-nio-9001-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shopping.catalogservice.controller.CategoryController#deleteCategories()
+2022-05-16 00:22:18.390 DEBUG 25708 --- [http-nio-9001-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-05-16 00:22:18.391 DEBUG 25708 --- [http-nio-9001-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["All employees are deleted successfully!"]
+2022-05-16 00:22:18.401 DEBUG 25708 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-05-16 00:22:25.398 DEBUG 25708 --- [http-nio-9001-exec-2] o.s.web.servlet.DispatcherServlet        : DELETE "/catalog/category/deleteAll", parameters={}
+2022-05-16 00:22:25.399 DEBUG 25708 --- [http-nio-9001-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shopping.catalogservice.controller.CategoryController#deleteCategories()
+2022-05-16 00:22:25.690 DEBUG 25708 --- [http-nio-9001-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-05-16 00:22:25.690 DEBUG 25708 --- [http-nio-9001-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["All employees are deleted successfully!"]
+2022-05-16 00:22:25.692 DEBUG 25708 --- [http-nio-9001-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-05-16 00:22:34.020 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-16 00:22:34.021 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-16 00:22:34.024 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-16 00:22:34.024 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-16 00:22:34.057  WARN 25708 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
+2022-05-16 00:22:34.057 ERROR 25708 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:3869e8e047a9bf13bc295809910478e6 - was unable to send heartbeat!
+=======
 2022-05-15 23:52:50.594 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
 2022-05-15 23:52:50.596 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
 2022-05-15 23:52:50.602 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
 2022-05-15 23:52:50.602 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
 2022-05-15 23:52:50.786  WARN 26132 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
 2022-05-15 23:52:50.787 ERROR 26132 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:5e56c1a7c699fb931e3715c691f2b526 - was unable to send heartbeat!
+>>>>>>> 28f656a82f8e052c4944f9810aaf7182a3113c19
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
@@ -5416,12 +5655,27 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
+<<<<<<< HEAD
+2022-05-16 00:22:48.031 DEBUG 25708 --- [http-nio-9001-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/catalog/product/save", parameters={}
+2022-05-16 00:22:48.032 DEBUG 25708 --- [http-nio-9001-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shopping.catalogservice.controller.ProductController#createCategory(Product)
+2022-05-16 00:22:48.043 DEBUG 25708 --- [http-nio-9001-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.shopping.catalogservice.entity.Product@26f305bf]
+2022-05-16 00:22:48.354 DEBUG 25708 --- [http-nio-9001-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-16 00:22:48.354 DEBUG 25708 --- [http-nio-9001-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.shopping.catalogservice.model.ProductResponseModel@5d55a52b]
+2022-05-16 00:22:48.357 DEBUG 25708 --- [http-nio-9001-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-05-16 00:23:04.039 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-16 00:23:04.042 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-16 00:23:04.048 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-16 00:23:04.051 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-16 00:23:04.079  WARN 25708 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
+2022-05-16 00:23:04.079 ERROR 25708 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:3869e8e047a9bf13bc295809910478e6 - was unable to send heartbeat!
+=======
 2022-05-15 23:53:20.607 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
 2022-05-15 23:53:20.608 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
 2022-05-15 23:53:20.611 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
 2022-05-15 23:53:20.612 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
 2022-05-15 23:53:20.809  WARN 26132 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
 2022-05-15 23:53:20.809 ERROR 26132 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:5e56c1a7c699fb931e3715c691f2b526 - was unable to send heartbeat!
+>>>>>>> 28f656a82f8e052c4944f9810aaf7182a3113c19
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
@@ -5437,12 +5691,21 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
+<<<<<<< HEAD
+2022-05-16 00:23:34.057 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-16 00:23:34.058 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-16 00:23:34.060 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-16 00:23:34.060 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-16 00:23:34.093  WARN 25708 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
+2022-05-16 00:23:34.094 ERROR 25708 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:3869e8e047a9bf13bc295809910478e6 - was unable to send heartbeat!
+=======
 2022-05-15 23:53:50.624 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
 2022-05-15 23:53:50.626 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
 2022-05-15 23:53:50.631 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
 2022-05-15 23:53:50.632 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
 2022-05-15 23:53:50.826  WARN 26132 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
 2022-05-15 23:53:50.827 ERROR 26132 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:5e56c1a7c699fb931e3715c691f2b526 - was unable to send heartbeat!
+>>>>>>> 28f656a82f8e052c4944f9810aaf7182a3113c19
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
@@ -5458,12 +5721,27 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
+<<<<<<< HEAD
+2022-05-16 00:23:48.425 DEBUG 25708 --- [http-nio-9001-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/catalog/category/save", parameters={}
+2022-05-16 00:23:48.426 DEBUG 25708 --- [http-nio-9001-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shopping.catalogservice.controller.CategoryController#createCategory(Category)
+2022-05-16 00:23:48.427 DEBUG 25708 --- [http-nio-9001-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.shopping.catalogservice.entity.Category@10bd32a5]
+2022-05-16 00:23:48.763 DEBUG 25708 --- [http-nio-9001-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-16 00:23:48.763 DEBUG 25708 --- [http-nio-9001-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.shopping.catalogservice.model.CategoryResponseModel@1a626dd4]
+2022-05-16 00:23:48.764 DEBUG 25708 --- [http-nio-9001-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-05-16 00:24:04.062 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-16 00:24:04.065 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-16 00:24:04.070 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-16 00:24:04.071 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-16 00:24:04.125  WARN 25708 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
+2022-05-16 00:24:04.128 ERROR 25708 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:3869e8e047a9bf13bc295809910478e6 - was unable to send heartbeat!
+=======
 2022-05-15 23:54:20.638 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
 2022-05-15 23:54:20.640 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
 2022-05-15 23:54:20.646 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
 2022-05-15 23:54:20.646 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
 2022-05-15 23:54:20.849  WARN 26132 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
 2022-05-15 23:54:20.849 ERROR 26132 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:5e56c1a7c699fb931e3715c691f2b526 - was unable to send heartbeat!
+>>>>>>> 28f656a82f8e052c4944f9810aaf7182a3113c19
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
@@ -5479,12 +5757,21 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
+<<<<<<< HEAD
+2022-05-16 00:24:34.077 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-16 00:24:34.079 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-16 00:24:34.085 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-16 00:24:34.088 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-16 00:24:34.147  WARN 25708 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
+2022-05-16 00:24:34.148 ERROR 25708 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:3869e8e047a9bf13bc295809910478e6 - was unable to send heartbeat!
+=======
 2022-05-15 23:54:50.655 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
 2022-05-15 23:54:50.657 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
 2022-05-15 23:54:50.663 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
 2022-05-15 23:54:50.664 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
 2022-05-15 23:54:50.872  WARN 26132 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
 2022-05-15 23:54:50.872 ERROR 26132 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:5e56c1a7c699fb931e3715c691f2b526 - was unable to send heartbeat!
+>>>>>>> 28f656a82f8e052c4944f9810aaf7182a3113c19
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
@@ -5500,12 +5787,33 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
+<<<<<<< HEAD
+2022-05-16 00:24:40.574 DEBUG 25708 --- [http-nio-9001-exec-5] o.s.web.servlet.DispatcherServlet        : PUT "/catalog/category/update/628141211af3ef60e73f67f9", parameters={}
+2022-05-16 00:24:40.575 DEBUG 25708 --- [http-nio-9001-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shopping.catalogservice.controller.CategoryController#updateCategory(String, Category)
+2022-05-16 00:24:40.582 DEBUG 25708 --- [http-nio-9001-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.shopping.catalogservice.entity.Category@43ae5f4b]
+2022-05-16 00:24:40.904 DEBUG 25708 --- [http-nio-9001-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-16 00:24:40.904 DEBUG 25708 --- [http-nio-9001-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.shopping.catalogservice.model.CategoryResponseModel@1f896624]
+2022-05-16 00:24:40.907 DEBUG 25708 --- [http-nio-9001-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-05-16 00:24:53.269 DEBUG 25708 --- [http-nio-9001-exec-6] o.s.web.servlet.DispatcherServlet        : PUT "/catalog/category/update/62814c3c7a28444ad33fa71f", parameters={}
+2022-05-16 00:24:53.270 DEBUG 25708 --- [http-nio-9001-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shopping.catalogservice.controller.CategoryController#updateCategory(String, Category)
+2022-05-16 00:24:53.271 DEBUG 25708 --- [http-nio-9001-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.shopping.catalogservice.entity.Category@6fdbba68]
+2022-05-16 00:24:53.864 DEBUG 25708 --- [http-nio-9001-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-16 00:24:53.864 DEBUG 25708 --- [http-nio-9001-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.shopping.catalogservice.model.CategoryResponseModel@f5afe55]
+2022-05-16 00:24:53.865 DEBUG 25708 --- [http-nio-9001-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-05-16 00:25:04.108 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-16 00:25:04.109 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-16 00:25:04.111 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-16 00:25:04.112 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-16 00:25:04.175  WARN 25708 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
+2022-05-16 00:25:04.177 ERROR 25708 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:3869e8e047a9bf13bc295809910478e6 - was unable to send heartbeat!
+=======
 2022-05-15 23:55:20.669 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
 2022-05-15 23:55:20.671 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
 2022-05-15 23:55:20.678 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
 2022-05-15 23:55:20.679 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
 2022-05-15 23:55:20.896  WARN 26132 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
 2022-05-15 23:55:20.896 ERROR 26132 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:5e56c1a7c699fb931e3715c691f2b526 - was unable to send heartbeat!
+>>>>>>> 28f656a82f8e052c4944f9810aaf7182a3113c19
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
@@ -5521,12 +5829,21 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
+<<<<<<< HEAD
+2022-05-16 00:25:34.120 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-16 00:25:34.122 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-16 00:25:34.127 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-16 00:25:34.130 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-16 00:25:34.201  WARN 25708 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
+2022-05-16 00:25:34.202 ERROR 25708 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:3869e8e047a9bf13bc295809910478e6 - was unable to send heartbeat!
+=======
 2022-05-15 23:55:50.697 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
 2022-05-15 23:55:50.699 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
 2022-05-15 23:55:50.704 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
 2022-05-15 23:55:50.704 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
 2022-05-15 23:55:50.905  WARN 26132 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
 2022-05-15 23:55:50.906 ERROR 26132 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:5e56c1a7c699fb931e3715c691f2b526 - was unable to send heartbeat!
+>>>>>>> 28f656a82f8e052c4944f9810aaf7182a3113c19
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
@@ -5542,12 +5859,21 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
+<<<<<<< HEAD
+2022-05-16 00:26:04.138 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-16 00:26:04.140 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-16 00:26:04.146 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-16 00:26:04.147 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-16 00:26:04.235  WARN 25708 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
+2022-05-16 00:26:04.237 ERROR 25708 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:3869e8e047a9bf13bc295809910478e6 - was unable to send heartbeat!
+=======
 2022-05-15 23:56:20.714 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
 2022-05-15 23:56:20.716 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
 2022-05-15 23:56:20.722 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
 2022-05-15 23:56:20.723 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
 2022-05-15 23:56:20.931  WARN 26132 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
 2022-05-15 23:56:20.932 ERROR 26132 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:5e56c1a7c699fb931e3715c691f2b526 - was unable to send heartbeat!
+>>>>>>> 28f656a82f8e052c4944f9810aaf7182a3113c19
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
@@ -5563,12 +5889,21 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
+<<<<<<< HEAD
+2022-05-16 00:26:34.162 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-16 00:26:34.165 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-16 00:26:34.170 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-16 00:26:34.173 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-16 00:26:34.257  WARN 25708 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
+2022-05-16 00:26:34.259 ERROR 25708 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:3869e8e047a9bf13bc295809910478e6 - was unable to send heartbeat!
+=======
 2022-05-15 23:56:50.739 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
 2022-05-15 23:56:50.741 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
 2022-05-15 23:56:50.747 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
 2022-05-15 23:56:50.747 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
 2022-05-15 23:56:50.948  WARN 26132 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
 2022-05-15 23:56:50.948 ERROR 26132 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:5e56c1a7c699fb931e3715c691f2b526 - was unable to send heartbeat!
+>>>>>>> 28f656a82f8e052c4944f9810aaf7182a3113c19
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
@@ -5584,12 +5919,21 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
+<<<<<<< HEAD
+2022-05-16 00:27:04.191 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-16 00:27:04.193 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-16 00:27:04.198 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-16 00:27:04.200 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-16 00:27:04.285  WARN 25708 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
+2022-05-16 00:27:04.288 ERROR 25708 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:3869e8e047a9bf13bc295809910478e6 - was unable to send heartbeat!
+=======
 2022-05-15 23:57:20.764 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
 2022-05-15 23:57:20.766 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
 2022-05-15 23:57:20.769 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
 2022-05-15 23:57:20.770 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
 2022-05-15 23:57:20.968  WARN 26132 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
 2022-05-15 23:57:20.968 ERROR 26132 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:5e56c1a7c699fb931e3715c691f2b526 - was unable to send heartbeat!
+>>>>>>> 28f656a82f8e052c4944f9810aaf7182a3113c19
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
@@ -5605,12 +5949,21 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
+<<<<<<< HEAD
+2022-05-16 00:27:34.219 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-16 00:27:34.221 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-16 00:27:34.227 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-16 00:27:34.229 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-16 00:27:34.313  WARN 25708 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
+2022-05-16 00:27:34.315 ERROR 25708 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:3869e8e047a9bf13bc295809910478e6 - was unable to send heartbeat!
+=======
 2022-05-15 23:57:50.779 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
 2022-05-15 23:57:50.780 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
 2022-05-15 23:57:50.782 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
 2022-05-15 23:57:50.783 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
 2022-05-15 23:57:50.986  WARN 26132 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
 2022-05-15 23:57:50.986 ERROR 26132 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:5e56c1a7c699fb931e3715c691f2b526 - was unable to send heartbeat!
+>>>>>>> 28f656a82f8e052c4944f9810aaf7182a3113c19
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
@@ -5626,12 +5979,21 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
+<<<<<<< HEAD
+2022-05-16 00:28:04.245 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-16 00:28:04.247 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-16 00:28:04.253 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-16 00:28:04.254 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-16 00:28:04.342  WARN 25708 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
+2022-05-16 00:28:04.345 ERROR 25708 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:3869e8e047a9bf13bc295809910478e6 - was unable to send heartbeat!
+=======
 2022-05-15 23:58:20.785 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
 2022-05-15 23:58:20.786 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
 2022-05-15 23:58:20.788 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
 2022-05-15 23:58:20.788 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
 2022-05-15 23:58:20.993  WARN 26132 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
 2022-05-15 23:58:20.993 ERROR 26132 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:5e56c1a7c699fb931e3715c691f2b526 - was unable to send heartbeat!
+>>>>>>> 28f656a82f8e052c4944f9810aaf7182a3113c19
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
@@ -5647,12 +6009,21 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
+<<<<<<< HEAD
+2022-05-16 00:28:34.267 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-16 00:28:34.268 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-16 00:28:34.272 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-16 00:28:34.273 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-16 00:28:34.376  WARN 25708 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
+2022-05-16 00:28:34.377 ERROR 25708 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:3869e8e047a9bf13bc295809910478e6 - was unable to send heartbeat!
+=======
 2022-05-15 23:58:50.796 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
 2022-05-15 23:58:50.798 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
 2022-05-15 23:58:50.802 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
 2022-05-15 23:58:50.803 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
 2022-05-15 23:58:51.006  WARN 26132 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
 2022-05-15 23:58:51.007 ERROR 26132 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:5e56c1a7c699fb931e3715c691f2b526 - was unable to send heartbeat!
+>>>>>>> 28f656a82f8e052c4944f9810aaf7182a3113c19
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
@@ -5668,12 +6039,21 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
+<<<<<<< HEAD
+2022-05-16 00:29:04.283 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-16 00:29:04.283 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-16 00:29:04.286 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-16 00:29:04.286 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-16 00:29:04.397  WARN 25708 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
+2022-05-16 00:29:04.398 ERROR 25708 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:3869e8e047a9bf13bc295809910478e6 - was unable to send heartbeat!
+=======
 2022-05-15 23:59:20.814 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
 2022-05-15 23:59:20.815 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
 2022-05-15 23:59:20.821 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
 2022-05-15 23:59:20.821 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
 2022-05-15 23:59:21.029  WARN 26132 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
 2022-05-15 23:59:21.030 ERROR 26132 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:5e56c1a7c699fb931e3715c691f2b526 - was unable to send heartbeat!
+>>>>>>> 28f656a82f8e052c4944f9810aaf7182a3113c19
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
@@ -5689,12 +6069,21 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
+<<<<<<< HEAD
+2022-05-16 00:29:34.292 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-16 00:29:34.293 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-16 00:29:34.295 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-16 00:29:34.296 DEBUG 25708 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-16 00:29:34.404  WARN 25708 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
+2022-05-16 00:29:34.405 ERROR 25708 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:3869e8e047a9bf13bc295809910478e6 - was unable to send heartbeat!
+=======
 2022-05-15 23:59:50.836 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
 2022-05-15 23:59:50.839 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
 2022-05-15 23:59:50.843 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
 2022-05-15 23:59:50.843 DEBUG 26132 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
 2022-05-15 23:59:51.047  WARN 26132 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Not enough variable values available to expand 'spring.application.na  me'
 2022-05-15 23:59:51.047 ERROR 26132 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATALOG-SERVICE/${spring.application.na  me}:5e56c1a7c699fb931e3715c691f2b526 - was unable to send heartbeat!
+>>>>>>> 28f656a82f8e052c4944f9810aaf7182a3113c19
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
