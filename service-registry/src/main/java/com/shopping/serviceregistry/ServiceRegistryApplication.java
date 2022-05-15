@@ -15,9 +15,4 @@ public class ServiceRegistryApplication {
 		SpringApplication.run(ServiceRegistryApplication.class, args);
 	}
 
-	@Bean
-	@LoadBalanced
-	public RestTemplate restTemplate(){
-		return new RestTemplate();
-	}
 }

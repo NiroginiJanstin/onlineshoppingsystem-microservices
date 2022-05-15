@@ -5,11 +5,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/catalog")
+@RequestMapping("catalog/product")
 public class ProductController {
 
     @GetMapping("/")
-    public String getStudentWithCourse(){
+    public String productController(){
         return "Welcome to product controller!";
     }
 }
