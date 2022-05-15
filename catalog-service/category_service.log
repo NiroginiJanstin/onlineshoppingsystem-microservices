@@ -1148,3 +1148,385 @@ Caused by: java.net.SocketTimeoutException: Receive timed out
 2022-05-15 18:29:26.703 DEBUG 12040 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
 2022-05-15 18:29:26.709 DEBUG 12040 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
 2022-05-15 18:29:26.709 DEBUG 12040 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:29:26.710 DEBUG 12040 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-15 18:29:56.721 DEBUG 12040 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-15 18:29:56.721 DEBUG 12040 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/CATALOG-SERVICE/105758-001L.adl.local:CATALOG-SERVICE:9001?status=UP&lastDirtyTimestamp=1652619326594
+2022-05-15 18:29:56.723 DEBUG 12040 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:29:56.724 DEBUG 12040 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:29:56.729 DEBUG 12040 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:29:56.730 DEBUG 12040 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-15 18:29:56.731 DEBUG 12040 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:31:44.879  WARN 23648 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-15 18:31:45.144  WARN 23648 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-15 18:31:45.415  WARN 23648 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-15 18:31:45.607 DEBUG 23648 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-05-15 18:31:45.751 DEBUG 23648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2022-05-15 18:31:45.792 DEBUG 23648 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-05-15 18:31:45.806 DEBUG 23648 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-05-15 18:31:46.898  WARN 23648 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-05-15 18:31:47.316 DEBUG 23648 --- [main] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/
+2022-05-15 18:31:47.460 DEBUG 23648 --- [main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:31:47.519 DEBUG 23648 --- [main] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:31:47.520 DEBUG 23648 --- [main] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-15 18:31:47.618 DEBUG 23648 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8761/eureka/apps/CATALOG-SERVICE
+2022-05-15 18:31:47.622 DEBUG 23648 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:31:47.653 DEBUG 23648 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Writing [InstanceInfo [instanceId = 105758-001L.adl.local:CATALOG-SERVICE:9001, appName = CATALOG-SERVICE, hostName = localhost, status = UP, ipAddr = 192.168.8.101, port = 9001, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@77307b51] as "application/json"
+2022-05-15 18:31:47.684 DEBUG 23648 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Response 204 NO_CONTENT
+2022-05-15 18:32:11.521  INFO 23648 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-15 18:32:11.522 DEBUG 23648 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-05-15 18:32:11.523 DEBUG 23648 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-05-15 18:32:11.523 DEBUG 23648 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-05-15 18:32:11.526 DEBUG 23648 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@cd93621
+2022-05-15 18:32:11.526 DEBUG 23648 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@541897c6
+2022-05-15 18:32:11.527 DEBUG 23648 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-05-15 18:32:11.527  INFO 23648 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2022-05-15 18:32:11.549 DEBUG 23648 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/catalog/category/", parameters={}
+2022-05-15 18:32:11.561 DEBUG 23648 --- [http-nio-9001-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shopping.catalogservice.controller.CategoryController#categoryController()
+2022-05-15 18:32:11.759 DEBUG 23648 --- [http-nio-9001-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-05-15 18:32:11.760 DEBUG 23648 --- [http-nio-9001-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Welcome to category controller!"]
+2022-05-15 18:32:11.779 DEBUG 23648 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-05-15 18:32:15.338 DEBUG 23648 --- [http-nio-9001-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/catalog/category/saveCategory", parameters={}
+2022-05-15 18:32:15.340 DEBUG 23648 --- [http-nio-9001-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shopping.catalogservice.controller.CategoryController#createCategory(Category)
+2022-05-15 18:32:15.362 DEBUG 23648 --- [http-nio-9001-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.shopping.catalogservice.entity.Category@1d3eca95]
+2022-05-15 18:32:17.559 DEBUG 23648 --- [http-nio-9001-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-15 18:32:17.561 DEBUG 23648 --- [http-nio-9001-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.shopping.catalogservice.model.CategoryResponseModel@5945663b]
+2022-05-15 18:32:17.566 DEBUG 23648 --- [http-nio-9001-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-05-15 18:32:17.567 DEBUG 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-15 18:32:17.568 DEBUG 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:32:17.573 DEBUG 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:32:17.574 DEBUG 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-15 18:32:17.580 DEBUG 23648 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/CATALOG-SERVICE/105758-001L.adl.local:CATALOG-SERVICE:9001?status=UP&lastDirtyTimestamp=1652619707594
+2022-05-15 18:32:17.600 DEBUG 23648 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:32:17.604 DEBUG 23648 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:32:47.592 DEBUG 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-15 18:32:47.593 DEBUG 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:32:47.597 DEBUG 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:32:47.598 DEBUG 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-15 18:32:47.607 DEBUG 23648 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/CATALOG-SERVICE/105758-001L.adl.local:CATALOG-SERVICE:9001?status=UP&lastDirtyTimestamp=1652619707594
+2022-05-15 18:32:47.608 DEBUG 23648 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:32:47.613 DEBUG 23648 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:33:17.602 DEBUG 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-15 18:33:17.603 DEBUG 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:33:17.607 DEBUG 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:33:17.608 DEBUG 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-15 18:33:17.616 DEBUG 23648 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/CATALOG-SERVICE/105758-001L.adl.local:CATALOG-SERVICE:9001?status=UP&lastDirtyTimestamp=1652619707594
+2022-05-15 18:33:17.617 DEBUG 23648 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:33:17.621 DEBUG 23648 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:33:47.617 DEBUG 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-15 18:33:47.619 DEBUG 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:33:47.626 DEBUG 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:33:47.627 DEBUG 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-15 18:33:47.633 DEBUG 23648 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/CATALOG-SERVICE/105758-001L.adl.local:CATALOG-SERVICE:9001?status=UP&lastDirtyTimestamp=1652619707594
+2022-05-15 18:33:47.634 DEBUG 23648 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:33:47.640 DEBUG 23648 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:34:17.645 DEBUG 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-15 18:34:17.645 DEBUG 23648 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/CATALOG-SERVICE/105758-001L.adl.local:CATALOG-SERVICE:9001?status=UP&lastDirtyTimestamp=1652619707594
+2022-05-15 18:34:17.649 DEBUG 23648 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:34:17.649 DEBUG 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:34:17.655 DEBUG 23648 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:34:17.655 DEBUG 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:34:17.657 DEBUG 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-15 18:34:47.658 DEBUG 23648 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/CATALOG-SERVICE/105758-001L.adl.local:CATALOG-SERVICE:9001?status=UP&lastDirtyTimestamp=1652619707594
+2022-05-15 18:34:47.661 DEBUG 23648 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:34:47.669 DEBUG 23648 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:34:47.671 DEBUG 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-15 18:34:47.672 DEBUG 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:34:47.678 DEBUG 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:34:47.681 DEBUG 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-15 18:35:17.683 DEBUG 23648 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/CATALOG-SERVICE/105758-001L.adl.local:CATALOG-SERVICE:9001?status=UP&lastDirtyTimestamp=1652619707594
+2022-05-15 18:35:17.685 DEBUG 23648 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:35:17.692 DEBUG 23648 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:35:17.695 DEBUG 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-15 18:35:17.697 DEBUG 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:35:17.701 DEBUG 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:35:17.702 DEBUG 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-15 18:35:47.712 DEBUG 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-15 18:35:47.712 DEBUG 23648 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/CATALOG-SERVICE/105758-001L.adl.local:CATALOG-SERVICE:9001?status=UP&lastDirtyTimestamp=1652619707594
+2022-05-15 18:35:47.714 DEBUG 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:35:47.715 DEBUG 23648 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:35:47.720 DEBUG 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:35:47.721 DEBUG 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-15 18:35:47.723 DEBUG 23648 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:43:46.325  WARN 14564 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-15 18:43:46.532  WARN 14564 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-15 18:43:46.728  WARN 14564 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-15 18:43:46.878 DEBUG 14564 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-05-15 18:43:46.986 DEBUG 14564 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2022-05-15 18:43:47.027 DEBUG 14564 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-05-15 18:43:47.045 DEBUG 14564 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-05-15 18:43:48.080  WARN 14564 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-05-15 18:43:48.535 DEBUG 14564 --- [main] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/
+2022-05-15 18:43:48.693 DEBUG 14564 --- [main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:43:48.771 DEBUG 14564 --- [main] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:43:48.773 DEBUG 14564 --- [main] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-15 18:43:48.884 DEBUG 14564 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8761/eureka/apps/CATALOG-SERVICE
+2022-05-15 18:43:48.888 DEBUG 14564 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:43:48.917 DEBUG 14564 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Writing [InstanceInfo [instanceId = 105758-001L.adl.local:CATALOG-SERVICE:9001, appName = CATALOG-SERVICE, hostName = localhost, status = UP, ipAddr = 192.168.8.101, port = 9001, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@1e14b269] as "application/json"
+2022-05-15 18:43:48.945 DEBUG 14564 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Response 204 NO_CONTENT
+2022-05-15 18:43:56.361  INFO 14564 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-15 18:43:56.363 DEBUG 14564 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-05-15 18:43:56.364 DEBUG 14564 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-05-15 18:43:56.364 DEBUG 14564 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-05-15 18:43:56.366 DEBUG 14564 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@21ba0d33
+2022-05-15 18:43:56.367 DEBUG 14564 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@1826475
+2022-05-15 18:43:56.368 DEBUG 14564 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-05-15 18:43:56.368  INFO 14564 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2022-05-15 18:43:56.390 DEBUG 14564 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/catalog/category/", parameters={}
+2022-05-15 18:43:56.406 DEBUG 14564 --- [http-nio-9001-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-05-15 18:43:56.575 DEBUG 14564 --- [http-nio-9001-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2022-05-15 18:43:56.579 DEBUG 14564 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2022-05-15 18:43:56.590 DEBUG 14564 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2022-05-15 18:43:56.595 DEBUG 14564 --- [http-nio-9001-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-05-15 18:43:56.632 DEBUG 14564 --- [http-nio-9001-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-15 18:43:56.633 DEBUG 14564 --- [http-nio-9001-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun May 15 18:43:56 IST 2022, status=404, error=Not Found, path=/catalog/category/}]
+2022-05-15 18:43:56.650 DEBUG 14564 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2022-05-15 18:44:01.410 DEBUG 14564 --- [http-nio-9001-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/catalog/category/msg", parameters={}
+2022-05-15 18:44:01.412 DEBUG 14564 --- [http-nio-9001-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shopping.catalogservice.controller.CategoryController#categoryController()
+2022-05-15 18:44:01.417 DEBUG 14564 --- [http-nio-9001-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-05-15 18:44:01.418 DEBUG 14564 --- [http-nio-9001-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Welcome to category controller!"]
+2022-05-15 18:44:01.420 DEBUG 14564 --- [http-nio-9001-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-05-15 18:44:18.825 DEBUG 14564 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-15 18:44:18.826 DEBUG 14564 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:44:18.831 DEBUG 14564 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:44:18.831 DEBUG 14564 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-15 18:44:18.840 DEBUG 14564 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/CATALOG-SERVICE/105758-001L.adl.local:CATALOG-SERVICE:9001?status=UP&lastDirtyTimestamp=1652620428858
+2022-05-15 18:44:18.863 DEBUG 14564 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:44:18.868 DEBUG 14564 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:44:22.011 DEBUG 14564 --- [http-nio-9001-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/catalog/category/saveCategory", parameters={}
+2022-05-15 18:44:22.013 DEBUG 14564 --- [http-nio-9001-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shopping.catalogservice.controller.CategoryController#createCategory(Category)
+2022-05-15 18:44:22.017 DEBUG 14564 --- [http-nio-9001-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.shopping.catalogservice.entity.Category@6b5b358c]
+2022-05-15 18:44:24.397 DEBUG 14564 --- [http-nio-9001-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-15 18:44:24.398 DEBUG 14564 --- [http-nio-9001-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.shopping.catalogservice.model.CategoryResponseModel@63613917]
+2022-05-15 18:44:24.402 DEBUG 14564 --- [http-nio-9001-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-05-15 18:44:48.842 DEBUG 14564 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-15 18:44:48.843 DEBUG 14564 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:44:48.847 DEBUG 14564 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:44:48.848 DEBUG 14564 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-15 18:44:48.873 DEBUG 14564 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/CATALOG-SERVICE/105758-001L.adl.local:CATALOG-SERVICE:9001?status=UP&lastDirtyTimestamp=1652620428858
+2022-05-15 18:44:48.875 DEBUG 14564 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:44:48.879 DEBUG 14564 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:45:18.855 DEBUG 14564 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-15 18:45:18.855 DEBUG 14564 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:45:18.860 DEBUG 14564 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:45:18.860 DEBUG 14564 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-15 18:45:18.887 DEBUG 14564 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/CATALOG-SERVICE/105758-001L.adl.local:CATALOG-SERVICE:9001?status=UP&lastDirtyTimestamp=1652620428858
+2022-05-15 18:45:18.887 DEBUG 14564 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:45:18.893 DEBUG 14564 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:47:38.070  WARN 25388 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-15 18:47:38.291  WARN 25388 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-15 18:47:38.489  WARN 25388 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-15 18:47:38.658 DEBUG 25388 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-05-15 18:47:38.774 DEBUG 25388 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2022-05-15 18:47:38.820 DEBUG 25388 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-05-15 18:47:38.837 DEBUG 25388 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-05-15 18:47:39.875  WARN 25388 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-05-15 18:47:40.217 DEBUG 25388 --- [main] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/
+2022-05-15 18:47:40.376 DEBUG 25388 --- [main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:47:40.445 DEBUG 25388 --- [main] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:47:40.446 DEBUG 25388 --- [main] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-15 18:47:40.533 DEBUG 25388 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8761/eureka/apps/CATALOG-SERVICE
+2022-05-15 18:47:40.537 DEBUG 25388 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:47:40.571 DEBUG 25388 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Writing [InstanceInfo [instanceId = 105758-001L.adl.local:CATALOG-SERVICE:9001, appName = CATALOG-SERVICE, hostName = localhost, status = UP, ipAddr = 192.168.8.101, port = 9001, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@1e14b269] as "application/json"
+2022-05-15 18:47:40.611 DEBUG 25388 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Response 204 NO_CONTENT
+2022-05-15 18:47:52.857  INFO 25388 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-15 18:47:52.858 DEBUG 25388 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-05-15 18:47:52.859 DEBUG 25388 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-05-15 18:47:52.859 DEBUG 25388 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-05-15 18:47:52.861 DEBUG 25388 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3b1137b0
+2022-05-15 18:47:52.862 DEBUG 25388 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@3ad558bf
+2022-05-15 18:47:52.863 DEBUG 25388 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-05-15 18:47:52.863  INFO 25388 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2022-05-15 18:47:52.885 DEBUG 25388 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/catalog/category/saveCategory", parameters={}
+2022-05-15 18:47:52.896 DEBUG 25388 --- [http-nio-9001-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shopping.catalogservice.controller.CategoryController#createCategory(Category)
+2022-05-15 18:47:53.101 DEBUG 25388 --- [http-nio-9001-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.shopping.catalogservice.entity.Category@349a725]
+2022-05-15 18:47:55.450 DEBUG 25388 --- [http-nio-9001-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-15 18:47:55.452 DEBUG 25388 --- [http-nio-9001-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.shopping.catalogservice.model.CategoryResponseModel@6a1de543]
+2022-05-15 18:47:55.471 DEBUG 25388 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-05-15 18:47:58.883 DEBUG 25388 --- [http-nio-9001-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/catalog/category/", parameters={}
+2022-05-15 18:47:58.884 DEBUG 25388 --- [http-nio-9001-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shopping.catalogservice.controller.CategoryController#categoryController()
+2022-05-15 18:47:58.889 DEBUG 25388 --- [http-nio-9001-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-05-15 18:47:58.889 DEBUG 25388 --- [http-nio-9001-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Welcome to category controller!"]
+2022-05-15 18:47:58.892 DEBUG 25388 --- [http-nio-9001-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-05-15 18:48:07.606 DEBUG 25388 --- [http-nio-9001-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/catalog/category/", parameters={}
+2022-05-15 18:48:07.611  WARN 25388 --- [http-nio-9001-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2022-05-15 18:48:07.612 DEBUG 25388 --- [http-nio-9001-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 405 METHOD_NOT_ALLOWED
+2022-05-15 18:48:07.619 DEBUG 25388 --- [http-nio-9001-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2022-05-15 18:48:07.622 DEBUG 25388 --- [http-nio-9001-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-05-15 18:48:07.628 DEBUG 25388 --- [http-nio-9001-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-15 18:48:07.629 DEBUG 25388 --- [http-nio-9001-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun May 15 18:48:07 IST 2022, status=405, error=Method Not Allowed, path=/catalog/categor (truncated)...]
+2022-05-15 18:48:07.636 DEBUG 25388 --- [http-nio-9001-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 405
+2022-05-15 18:48:10.495 DEBUG 25388 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-15 18:48:10.498 DEBUG 25388 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:48:10.505 DEBUG 25388 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:48:10.507 DEBUG 25388 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-15 18:48:10.512 DEBUG 25388 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/CATALOG-SERVICE/105758-001L.adl.local:CATALOG-SERVICE:9001?status=UP&lastDirtyTimestamp=1652620660520
+2022-05-15 18:48:10.542 DEBUG 25388 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:48:10.547 DEBUG 25388 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:48:15.982 DEBUG 25388 --- [http-nio-9001-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/catalog/category/", parameters={}
+2022-05-15 18:48:15.984 DEBUG 25388 --- [http-nio-9001-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shopping.catalogservice.controller.CategoryController#categoryController()
+2022-05-15 18:48:15.986 DEBUG 25388 --- [http-nio-9001-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-05-15 18:48:15.986 DEBUG 25388 --- [http-nio-9001-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Welcome to category controller!"]
+2022-05-15 18:48:15.988 DEBUG 25388 --- [http-nio-9001-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-05-15 18:48:21.764 DEBUG 25388 --- [http-nio-9001-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/catalog/category/saveCategory", parameters={}
+2022-05-15 18:48:21.766  WARN 25388 --- [http-nio-9001-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2022-05-15 18:48:21.766 DEBUG 25388 --- [http-nio-9001-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 405 METHOD_NOT_ALLOWED
+2022-05-15 18:48:21.766 DEBUG 25388 --- [http-nio-9001-exec-5] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2022-05-15 18:48:21.767 DEBUG 25388 --- [http-nio-9001-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-05-15 18:48:21.769 DEBUG 25388 --- [http-nio-9001-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-15 18:48:21.769 DEBUG 25388 --- [http-nio-9001-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun May 15 18:48:21 IST 2022, status=405, error=Method Not Allowed, path=/catalog/categor (truncated)...]
+2022-05-15 18:48:21.771 DEBUG 25388 --- [http-nio-9001-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 405
+2022-05-15 18:48:26.594 DEBUG 25388 --- [http-nio-9001-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/catalog/category/saveCategory", parameters={}
+2022-05-15 18:48:26.596 DEBUG 25388 --- [http-nio-9001-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shopping.catalogservice.controller.CategoryController#createCategory(Category)
+2022-05-15 18:48:26.598 DEBUG 25388 --- [http-nio-9001-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.shopping.catalogservice.entity.Category@63f41d71]
+2022-05-15 18:48:26.893 DEBUG 25388 --- [http-nio-9001-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-15 18:48:26.895 DEBUG 25388 --- [http-nio-9001-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.shopping.catalogservice.model.CategoryResponseModel@6d33ff7f]
+2022-05-15 18:48:26.896 DEBUG 25388 --- [http-nio-9001-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-05-15 18:48:34.628 DEBUG 25388 --- [http-nio-9001-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/catalog/category/saveCategory", parameters={}
+2022-05-15 18:48:34.629 DEBUG 25388 --- [http-nio-9001-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shopping.catalogservice.controller.CategoryController#createCategory(Category)
+2022-05-15 18:48:34.631 DEBUG 25388 --- [http-nio-9001-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.shopping.catalogservice.entity.Category@ff0914f]
+2022-05-15 18:48:34.918 DEBUG 25388 --- [http-nio-9001-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-15 18:48:34.919 DEBUG 25388 --- [http-nio-9001-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.shopping.catalogservice.model.CategoryResponseModel@400a74fa]
+2022-05-15 18:48:34.922 DEBUG 25388 --- [http-nio-9001-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-05-15 18:48:40.532 DEBUG 25388 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-15 18:48:40.534 DEBUG 25388 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:48:40.536 DEBUG 25388 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:48:40.537 DEBUG 25388 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-15 18:48:40.548 DEBUG 25388 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/CATALOG-SERVICE/105758-001L.adl.local:CATALOG-SERVICE:9001?status=UP&lastDirtyTimestamp=1652620660520
+2022-05-15 18:48:40.549 DEBUG 25388 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:48:40.553 DEBUG 25388 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:48:40.644 DEBUG 25388 --- [http-nio-9001-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/catalog/category/saveCategory", parameters={}
+2022-05-15 18:48:40.645 DEBUG 25388 --- [http-nio-9001-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shopping.catalogservice.controller.CategoryController#createCategory(Category)
+2022-05-15 18:48:40.647 DEBUG 25388 --- [http-nio-9001-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.shopping.catalogservice.entity.Category@513076eb]
+2022-05-15 18:48:40.945 DEBUG 25388 --- [http-nio-9001-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-15 18:48:40.946 DEBUG 25388 --- [http-nio-9001-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.shopping.catalogservice.model.CategoryResponseModel@5ff782bd]
+2022-05-15 18:48:40.950 DEBUG 25388 --- [http-nio-9001-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-05-15 18:48:51.360 DEBUG 25388 --- [http-nio-9001-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/catalog/category/", parameters={}
+2022-05-15 18:48:51.361 DEBUG 25388 --- [http-nio-9001-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shopping.catalogservice.controller.CategoryController#categoryController()
+2022-05-15 18:48:51.362 DEBUG 25388 --- [http-nio-9001-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-05-15 18:48:51.363 DEBUG 25388 --- [http-nio-9001-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Welcome to category controller!"]
+2022-05-15 18:48:51.364 DEBUG 25388 --- [http-nio-9001-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-05-15 18:49:26.008  WARN 24880 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-15 18:49:26.234  WARN 24880 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-15 18:49:26.482  WARN 24880 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-15 18:49:26.612 DEBUG 24880 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-05-15 18:49:26.697 DEBUG 24880 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2022-05-15 18:49:26.737 DEBUG 24880 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-05-15 18:49:26.753 DEBUG 24880 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-05-15 18:49:27.872  WARN 24880 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-05-15 18:49:28.235 DEBUG 24880 --- [main] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/
+2022-05-15 18:49:28.385 DEBUG 24880 --- [main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:49:28.459 DEBUG 24880 --- [main] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:49:28.461 DEBUG 24880 --- [main] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-15 18:49:28.592 DEBUG 24880 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8761/eureka/apps/CATALOG-SERVICE
+2022-05-15 18:49:28.597 DEBUG 24880 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:49:28.622 DEBUG 24880 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Writing [InstanceInfo [instanceId = 105758-001L.adl.local:CATALOG-SERVICE:9001, appName = CATALOG-SERVICE, hostName = localhost, status = UP, ipAddr = 192.168.8.101, port = 9001, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@48d464cf] as "application/json"
+2022-05-15 18:49:28.653 DEBUG 24880 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.web.client.RestTemplate              : Response 204 NO_CONTENT
+2022-05-15 18:49:38.876  INFO 24880 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-15 18:49:38.877 DEBUG 24880 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-05-15 18:49:38.878 DEBUG 24880 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-05-15 18:49:38.879 DEBUG 24880 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-05-15 18:49:38.881 DEBUG 24880 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@78ea700f
+2022-05-15 18:49:38.882 DEBUG 24880 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@75da2db
+2022-05-15 18:49:38.883 DEBUG 24880 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-05-15 18:49:38.883  INFO 24880 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2022-05-15 18:49:38.905 DEBUG 24880 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/catalog/category/saveCategory", parameters={}
+2022-05-15 18:49:38.915 DEBUG 24880 --- [http-nio-9001-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shopping.catalogservice.controller.CategoryController#createCategory(Category)
+2022-05-15 18:49:39.113 DEBUG 24880 --- [http-nio-9001-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.shopping.catalogservice.entity.Category@7d61b7f0]
+2022-05-15 18:49:41.515 DEBUG 24880 --- [http-nio-9001-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-15 18:49:41.518 DEBUG 24880 --- [http-nio-9001-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.shopping.catalogservice.model.CategoryResponseModel@60dbaf1b]
+2022-05-15 18:49:41.535 DEBUG 24880 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-05-15 18:49:42.495 DEBUG 24880 --- [http-nio-9001-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/catalog/category/saveCategory", parameters={}
+2022-05-15 18:49:42.496 DEBUG 24880 --- [http-nio-9001-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shopping.catalogservice.controller.CategoryController#createCategory(Category)
+2022-05-15 18:49:42.498 DEBUG 24880 --- [http-nio-9001-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.shopping.catalogservice.entity.Category@100e4ab2]
+2022-05-15 18:49:42.785 DEBUG 24880 --- [http-nio-9001-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-15 18:49:42.786 DEBUG 24880 --- [http-nio-9001-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.shopping.catalogservice.model.CategoryResponseModel@1ec9b6c3]
+2022-05-15 18:49:42.788 DEBUG 24880 --- [http-nio-9001-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-05-15 18:49:53.277 DEBUG 24880 --- [http-nio-9001-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/catalog/category/", parameters={}
+2022-05-15 18:49:53.278 DEBUG 24880 --- [http-nio-9001-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shopping.catalogservice.controller.CategoryController#categoryController()
+2022-05-15 18:49:53.282 DEBUG 24880 --- [http-nio-9001-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-05-15 18:49:53.282 DEBUG 24880 --- [http-nio-9001-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Welcome to category controller!"]
+2022-05-15 18:49:53.284 DEBUG 24880 --- [http-nio-9001-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-05-15 18:49:56.312 DEBUG 24880 --- [http-nio-9001-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/catalog/category/saveCategory", parameters={}
+2022-05-15 18:49:56.313 DEBUG 24880 --- [http-nio-9001-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shopping.catalogservice.controller.CategoryController#createCategory(Category)
+2022-05-15 18:49:56.315 DEBUG 24880 --- [http-nio-9001-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.shopping.catalogservice.entity.Category@7c9c4ef4]
+2022-05-15 18:49:56.592 DEBUG 24880 --- [http-nio-9001-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-15 18:49:56.593 DEBUG 24880 --- [http-nio-9001-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.shopping.catalogservice.model.CategoryResponseModel@3366b52c]
+2022-05-15 18:49:56.596 DEBUG 24880 --- [http-nio-9001-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-05-15 18:49:58.526 DEBUG 24880 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-15 18:49:58.528 DEBUG 24880 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:49:58.534 DEBUG 24880 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:49:58.535 DEBUG 24880 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-15 18:49:58.545 DEBUG 24880 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/CATALOG-SERVICE/105758-001L.adl.local:CATALOG-SERVICE:9001?status=UP&lastDirtyTimestamp=1652620768572
+2022-05-15 18:49:58.565 DEBUG 24880 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:49:58.569 DEBUG 24880 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:50:28.549 DEBUG 24880 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-15 18:50:28.551 DEBUG 24880 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:50:28.558 DEBUG 24880 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:50:28.559 DEBUG 24880 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-15 18:50:28.579 DEBUG 24880 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/CATALOG-SERVICE/105758-001L.adl.local:CATALOG-SERVICE:9001?status=UP&lastDirtyTimestamp=1652620768572
+2022-05-15 18:50:28.580 DEBUG 24880 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:50:28.587 DEBUG 24880 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:50:58.574 DEBUG 24880 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-15 18:50:58.576 DEBUG 24880 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:50:58.581 DEBUG 24880 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:50:58.583 DEBUG 24880 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-15 18:50:58.603 DEBUG 24880 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/CATALOG-SERVICE/105758-001L.adl.local:CATALOG-SERVICE:9001?status=UP&lastDirtyTimestamp=1652620768572
+2022-05-15 18:50:58.604 DEBUG 24880 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:50:58.610 DEBUG 24880 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:51:02.849 DEBUG 24880 --- [http-nio-9001-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/catalog/category/saveCategory", parameters={}
+2022-05-15 18:51:02.851 DEBUG 24880 --- [http-nio-9001-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shopping.catalogservice.controller.CategoryController#createCategory(Category)
+2022-05-15 18:51:02.858 DEBUG 24880 --- [http-nio-9001-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.shopping.catalogservice.entity.Category@5900d995]
+2022-05-15 18:51:03.156 DEBUG 24880 --- [http-nio-9001-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-15 18:51:03.159 DEBUG 24880 --- [http-nio-9001-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.shopping.catalogservice.model.CategoryResponseModel@57c72cc5]
+2022-05-15 18:51:03.163 DEBUG 24880 --- [http-nio-9001-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-05-15 18:51:09.126 DEBUG 24880 --- [http-nio-9001-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/catalog/category/", parameters={}
+2022-05-15 18:51:09.127 DEBUG 24880 --- [http-nio-9001-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shopping.catalogservice.controller.CategoryController#categoryController()
+2022-05-15 18:51:09.128 DEBUG 24880 --- [http-nio-9001-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-05-15 18:51:09.128 DEBUG 24880 --- [http-nio-9001-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Welcome to category controller!"]
+2022-05-15 18:51:09.130 DEBUG 24880 --- [http-nio-9001-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-05-15 18:51:11.998 DEBUG 24880 --- [http-nio-9001-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/catalog/category/saveCategory", parameters={}
+2022-05-15 18:51:11.999 DEBUG 24880 --- [http-nio-9001-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shopping.catalogservice.controller.CategoryController#createCategory(Category)
+2022-05-15 18:51:12.000 DEBUG 24880 --- [http-nio-9001-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.shopping.catalogservice.entity.Category@5ec896e2]
+2022-05-15 18:51:12.328 DEBUG 24880 --- [http-nio-9001-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-15 18:51:12.329 DEBUG 24880 --- [http-nio-9001-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.shopping.catalogservice.model.CategoryResponseModel@500f634b]
+2022-05-15 18:51:12.335 DEBUG 24880 --- [http-nio-9001-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-05-15 18:51:21.319 DEBUG 24880 --- [http-nio-9001-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/catalog/category/saveCategory", parameters={}
+2022-05-15 18:51:21.320 DEBUG 24880 --- [http-nio-9001-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shopping.catalogservice.controller.CategoryController#createCategory(Category)
+2022-05-15 18:51:21.323 DEBUG 24880 --- [http-nio-9001-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.shopping.catalogservice.entity.Category@77c31399]
+2022-05-15 18:51:21.607 DEBUG 24880 --- [http-nio-9001-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-15 18:51:21.608 DEBUG 24880 --- [http-nio-9001-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.shopping.catalogservice.model.CategoryResponseModel@7904f311]
+2022-05-15 18:51:21.610 DEBUG 24880 --- [http-nio-9001-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-05-15 18:51:28.595 DEBUG 24880 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-15 18:51:28.596 DEBUG 24880 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:51:28.601 DEBUG 24880 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:51:28.601 DEBUG 24880 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-15 18:51:28.627 DEBUG 24880 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/CATALOG-SERVICE/105758-001L.adl.local:CATALOG-SERVICE:9001?status=UP&lastDirtyTimestamp=1652620768572
+2022-05-15 18:51:28.628 DEBUG 24880 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:51:28.633 DEBUG 24880 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:51:58.616 DEBUG 24880 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-15 18:51:58.617 DEBUG 24880 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:51:58.622 DEBUG 24880 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:51:58.623 DEBUG 24880 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-15 18:51:58.647 DEBUG 24880 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/CATALOG-SERVICE/105758-001L.adl.local:CATALOG-SERVICE:9001?status=UP&lastDirtyTimestamp=1652620768572
+2022-05-15 18:51:58.648 DEBUG 24880 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:51:58.653 DEBUG 24880 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:52:14.718 DEBUG 24880 --- [http-nio-9001-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/catalog/category/saveCategory", parameters={}
+2022-05-15 18:52:14.719 DEBUG 24880 --- [http-nio-9001-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shopping.catalogservice.controller.CategoryController#createCategory(Category)
+2022-05-15 18:52:14.720 DEBUG 24880 --- [http-nio-9001-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.shopping.catalogservice.entity.Category@1c8ecf10]
+2022-05-15 18:52:15.116 DEBUG 24880 --- [http-nio-9001-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-15 18:52:15.117 DEBUG 24880 --- [http-nio-9001-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.shopping.catalogservice.model.CategoryResponseModel@124932f1]
+2022-05-15 18:52:15.121 DEBUG 24880 --- [http-nio-9001-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-05-15 18:52:28.633 DEBUG 24880 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-15 18:52:28.635 DEBUG 24880 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:52:28.638 DEBUG 24880 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:52:28.638 DEBUG 24880 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-15 18:52:28.664 DEBUG 24880 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/CATALOG-SERVICE/105758-001L.adl.local:CATALOG-SERVICE:9001?status=UP&lastDirtyTimestamp=1652620768572
+2022-05-15 18:52:28.665 DEBUG 24880 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:52:28.669 DEBUG 24880 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:52:58.648 DEBUG 24880 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2022-05-15 18:52:58.650 DEBUG 24880 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:52:58.654 DEBUG 24880 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2022-05-15 18:52:58.654 DEBUG 24880 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2022-05-15 18:52:58.679 DEBUG 24880 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/CATALOG-SERVICE/105758-001L.adl.local:CATALOG-SERVICE:9001?status=UP&lastDirtyTimestamp=1652620768572
+2022-05-15 18:52:58.680 DEBUG 24880 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-05-15 18:52:58.684 DEBUG 24880 --- [DiscoveryClient-HeartbeatExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
