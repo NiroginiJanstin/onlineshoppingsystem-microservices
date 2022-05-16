@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="api-gateway" />
+        <module name="cloud-config-server" />
         <module name="customer-service" />
         <module name="identity-service" />
         <module name="service-registry" />
@@ -16,6 +17,7 @@
     <bytecodeTargetLevel>
       <module name="api-gateway" target="1.8" />
       <module name="catalog-service" target="11" />
+      <module name="cloud-config-server" target="11" />
       <module name="customer-service" target="11" />
       <module name="identity-service" target="11" />
       <module name="service-registry" target="11" />
@@ -25,6 +27,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="api-gateway" options="-parameters" />
       <module name="catalog-service" options="-parameters" />
+      <module name="cloud-config-server" options="-parameters" />
       <module name="customer-service" options="-parameters" />
       <module name="identity-service" options="-parameters" />
       <module name="service-registry" options="-parameters" />

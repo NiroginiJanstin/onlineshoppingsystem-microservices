@@ -30,6 +30,13 @@ public class ApiGatewayApplication {
 										.circuitBreaker(c -> c.setName("hystrix")
 												.setFallbackUri("forward:/catalogServiceFallback")))
 								.uri("lb://CATALOG-SERVICE"))
+
+				.route("identity",
+						r->r.path("/identity/**")
+								.filters(f -> f
+										.circuitBreaker(c -> c.setName("hystrix")
+												.setFallbackUri("forward:/identityServiceFallback")))
+								.uri("lb://IDENTITY-SERVICE"))
 				.build();
 	}
 }
