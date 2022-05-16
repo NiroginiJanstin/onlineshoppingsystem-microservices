@@ -30,38 +30,38 @@ jobs:
     - name: Building and Pushing catalog-service
       run: mvn package dockerfile:push --file catalog-service/pom.xml
       env:
-          MAVEN_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-          MAVEN_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+          MAVEN_USERNAME: ${{ secrets.DOCKER_USERNAME_1 }}
+          MAVEN_PASSWORD: ${{ secrets.DOCKER_PASSWORD_1 }}
 
     - name: Build and Push identity-service
-      run: mvn package dockerfile:push --file department-service/pom.xml
+      run: mvn package dockerfile:push --file identity-service/pom.xml
       env:
-          MAVEN_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-          MAVEN_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+          MAVEN_USERNAME: ${{ secrets.DOCKER_USERNAME_2 }}
+          MAVEN_PASSWORD: ${{ secrets.DOCKER_PASSWORD_2 }}
 
     - name: Build and Push cloud-config-server
       run: mvn package dockerfile:push --file cloud-config-server/pom.xml
       env:
-          MAVEN_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-          MAVEN_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+          MAVEN_USERNAME: ${{ secrets.DOCKER_USERNAME_1 }}
+          MAVEN_PASSWORD: ${{ secrets.DOCKER_PASSWORD_1 }}
 
     - name: Build and Push api-gateway
-      run: mvn package dockerfile:push --file cloud-gateway/pom.xml
+      run: mvn package dockerfile:push --file api-gateway/pom.xml
       env:
-          MAVEN_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-          MAVEN_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+          MAVEN_USERNAME: ${{ secrets.DOCKER_USERNAME_1 }}
+          MAVEN_PASSWORD: ${{ secrets.DOCKER_PASSWORD_1 }}
 
     - name: Build and Push customer-service
-      run: mvn package dockerfile:push --file hystrix-dashboard/pom.xml
+      run: mvn package dockerfile:push --file customer-service/pom.xml
       env:
-          MAVEN_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-          MAVEN_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+          MAVEN_USERNAME: ${{ secrets.DOCKER_USERNAME_2 }}
+          MAVEN_PASSWORD: ${{ secrets.DOCKER_PASSWORD_2 }}
 
     - name: Build and Push service-registry
       run: mvn package dockerfile:push --file service-registry/pom.xml
       env:
-          MAVEN_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-          MAVEN_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+          MAVEN_USERNAME: ${{ secrets.DOCKER_USERNAME_1 }}
+          MAVEN_PASSWORD: ${{ secrets.DOCKER_PASSWORD_1 }}
 
   Deploy:
     needs: build
