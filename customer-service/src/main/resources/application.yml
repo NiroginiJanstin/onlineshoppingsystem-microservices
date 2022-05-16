@@ -4,6 +4,8 @@ server:
 spring:
   application:
     name: CUSTOMER-SERVICE
+  zipkin:
+    base-url: http://127.0.0.1:9411/
 
   datasource:
     username: root
@@ -15,3 +17,13 @@ spring:
     hibernate:
       ddl-auto: update
     properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+
+eureka:
+  instance:
+    preferIpAddress: true
+    hostname: eureka-0
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://eureka-0.eureka.default.svc.cluster.local:8761/eureka

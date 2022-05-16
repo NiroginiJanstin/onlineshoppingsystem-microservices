@@ -24,4 +24,10 @@ public class FallbackController {
     public String identityServiceFallBackMethod(){
         return "Identity service is taking long than expected."+" Please try again later";
     }
+
+    @HystrixCommand
+    @RequestMapping("/customerServiceFallback")
+    public String customerServiceFallBackMethod(){
+        return "Customer service is taking long than expected."+" Please try again later";
+    }
 }
