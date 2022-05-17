@@ -1,9 +1,8 @@
 package com.shopping.customerservice.repository;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.mongodb.repository.MongoRepository;
+import com.shopping.customerservice.entity.Customer;
 
-import com.shopping.customerservice.model.Customer;
+public interface CustomerRepository extends MongoRepository<Customer,String> {
 
-public interface CustomerRepository extends JpaRepository<Customer, Integer> {
-	 
 }
