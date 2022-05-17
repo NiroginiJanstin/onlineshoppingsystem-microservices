@@ -1,64 +1,80 @@
 package com.shopping.customerservice.controller;
 
+import lombok.extern.flogger.Flogger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import com.shopping.customerservice.model.Customer;
-import com.shopping.customerservice.repository.CustomerRepository;
-import com.shopping.customerservice.service.CustomerService;
+import com.shopping.customerservice.entity.Customer;
+import com.shopping.customerservice.model.CustomerModel;
+import com.shopping.customerservice.service.CustomerServiceInterface;
 
-import java.util.List;
-
-@RequestMapping("/api/customer")
 @RestController
+@RequestMapping("/shopping/customer")
 public class CustomerController {
+    Logger logger = LoggerFactory.getLogger(CustomerController.class);
 
     @Autowired
-    private CustomerService customerService;
-    
-    @Autowired
-    CustomerRepository repo;
+    CustomerServiceInterface customerServiceInterface;
+
+    @GetMapping("/")
+    public String customerController(){
+        return "Welcome to customer controller class!";
+    }
 
     @PostMapping("/save")
-    public Customer addCustomer(@RequestBody Customer customer)
-    {
-    	Customer cus = repo.save(customer);
-        return cus;
-    }
-    
-    @GetMapping("/getAll")
-    public List<Customer> listAll() {
-        List<Customer> listUsers = repo.findAll();
-        return listUsers;
-    }
- 
-    @GetMapping(path = "/getById")
-    public Customer getCustomer(@RequestParam("id") int id)
-    {
-    	Customer cus = repo.getById(id);
-    	return cus;
+    public ResponseEntity<CustomerModel> createCustomer(@RequestBody Customer customer) {
+        try{
+            logger.info("Start calling customer service"+customer);
+            return new ResponseEntity<>(customerServiceInterface.create(customer), HttpStatus.OK);
+        }
+        catch (Exception e){
+            return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
     }
 
-    @DeleteMapping(path = "/delete")
-    public String deleteCustomer(@RequestParam("id") int id)
-    {
-    	repo.deleteById(id);
-        return  "Customer Id " + id + " is Deleted!!";
+    @GetMapping("/getById/{id}")
+    public ResponseEntity<CustomerModel> getCustomerById(@PathVariable("id") String customer_id) {
+        try{
+            return new ResponseEntity<>(customerServiceInterface.getById(customer_id), HttpStatus.OK);
+        }
+        catch (Exception e){
+            return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
     }
-    
-    @PutMapping(path = "/update")
-    public Customer updateCustomer(@RequestBody Customer customer)
-    {
-    	Customer cus = new Customer();
-    	cus.setCustomer_id(customer.getCustomer_id());
-    	cus.setName(customer.getName());
-    	cus.setPhone(customer.getPhone());
-    	cus.setAddress(customer.getAddress());
-    	cus.setCustomer_code(customer.getCustomer_code());
-    	Customer cust = repo.save(cus);
-    	return cust;
-        
+
+    @PutMapping("/update/{id}")
+    public ResponseEntity<CustomerModel> updateCustomer(@PathVariable("id") String customer_id, @RequestBody Customer customer) {
+        try{
+            return new ResponseEntity<>(customerServiceInterface.update(customer_id,customer), HttpStatus.OK);
+        }
+        catch (Exception e){
+            return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
     }
-    
- 
+
+
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<CustomerModel> deleteCustomer(@PathVariable("id") String customer_id) {
+        try{
+            return new ResponseEntity<>(customerServiceInterface.delete(customer_id), HttpStatus.OK);
+        }
+        catch (Exception e){
+            return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @DeleteMapping("/deleteAll")
+    public ResponseEntity<String> deleteCustomers() {
+        try{
+            return new ResponseEntity<>(customerServiceInterface.deleteAll(), HttpStatus.OK);
+        }
+        catch (Exception e){
+            return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
 }

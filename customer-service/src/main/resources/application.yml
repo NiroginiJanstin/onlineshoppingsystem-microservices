@@ -7,20 +7,6 @@ spring:
   zipkin:
     base-url: http://127.0.0.1:9411/
 
-<<<<<<< HEAD
- 
-=======
-  datasource:
-    username: root
-    password: root
-    url: jdbc:mysql://localhost:3306/ctse?useSSL=false
-    driver-class-name: com.mysql.cj.jdbc.Driver
-  jpa:
-    show-sql: true
-    hibernate:
-      ddl-auto: update
-    properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
-
 eureka:
   instance:
     preferIpAddress: true
@@ -30,4 +16,4 @@ eureka:
     fetchRegistry: true
     serviceUrl:
       defaultZone: http://eureka-0.eureka.default.svc.cluster.local:8761/eureka
->>>>>>> bc53770659c7a0fb67b75530ff5f5fa1abdb6ec2
+
