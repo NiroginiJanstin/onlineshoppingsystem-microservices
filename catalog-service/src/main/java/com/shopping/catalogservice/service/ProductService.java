@@ -12,6 +12,8 @@ import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.aggregation.Aggregation;
 import org.springframework.data.mongodb.core.aggregation.AggregationResults;
 import org.springframework.data.mongodb.core.aggregation.TypedAggregation;
+import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -154,17 +156,9 @@ public class ProductService implements IProductService{
 
     @Override
     public List<Product> getProductsByCategoryId(String categoryId) {
-        TypedAggregation<Product> productAggregation = Aggregation.newAggregation(Product.class,
-                Aggregation .group("categoryId").
-                        push(new BasicDBObject
-                                ("_id", "$_id").append
-                                ("productName", "$productName").append
-                                ("productImageUrl", "$productImageUrl").append
-                                ("qty", "$qty").append
-                                ("discount", "$discount")).as("products"));
-        AggregationResults<Product> results = mongoTemplate.aggregate(productAggregation, Product.class);
-
-        List<Product> products = results.getMappedResults();
+        Query query = new Query();
+        query.addCriteria(Criteria.where("categoryId").is(categoryId));
+        List<Product> products = mongoTemplate.find(query, Product.class);
         return products;
     }
 }

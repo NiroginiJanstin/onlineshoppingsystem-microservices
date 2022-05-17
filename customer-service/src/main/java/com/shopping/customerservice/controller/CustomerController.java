@@ -13,7 +13,7 @@ import com.shopping.customerservice.model.CustomerModel;
 import com.shopping.customerservice.service.CustomerServiceInterface;
 
 @RestController
-@RequestMapping("/shopping/customer")
+@RequestMapping("customer")
 public class CustomerController {
     Logger logger = LoggerFactory.getLogger(CustomerController.class);
 

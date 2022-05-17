@@ -12,4 +12,5 @@ public interface ICategoryService {
     public CategoryResponseModel delete(String categoryId);
     public List<String> getCategoryIds();
     public String deleteAll();
+    public List<Category> getAll();
 }

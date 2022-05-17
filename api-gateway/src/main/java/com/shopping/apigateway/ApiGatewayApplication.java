@@ -39,7 +39,7 @@ public class ApiGatewayApplication {
 								.uri("lb://IDENTITY-SERVICE"))
 
 				.route("customer",
-						r->r.path("/api/employee/**")
+						r->r.path("/customer/**")
 								.filters(f -> f
 										.circuitBreaker(c -> c.setName("hystrix")
 												.setFallbackUri("forward:/customerServiceFallback")))

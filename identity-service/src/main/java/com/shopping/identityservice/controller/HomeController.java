@@ -29,7 +29,7 @@ public class HomeController {
         return "Welcome to Daily Code Buffer!!";
     }
 
-    @PostMapping("/authenticate")
+    @PostMapping("/admin/authenticate")
     public JwtResponse authenticate(@RequestBody JwtRequest jwtRequest) throws Exception{
 
         try {

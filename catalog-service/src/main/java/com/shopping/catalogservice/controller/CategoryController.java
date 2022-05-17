@@ -12,6 +12,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("catalog/category")
 public class CategoryController {
@@ -77,4 +79,13 @@ public class CategoryController {
         }
     }
 
+    @GetMapping("/getAll")
+    public ResponseEntity<List<Category>> getCategories() {
+        try{
+            return new ResponseEntity<List<Category>>(categoryService.getAll(), HttpStatus.OK);
+        }
+        catch (Exception e){
+            return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
 }

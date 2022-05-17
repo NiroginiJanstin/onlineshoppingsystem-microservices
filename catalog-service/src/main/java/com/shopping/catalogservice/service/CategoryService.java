@@ -119,4 +119,9 @@ public class CategoryService implements ICategoryService {
         categoryRepository.deleteAll();
         return "All categories are deleted successfully!";
     }
+
+    @Override
+    public List<Category> getAll() {
+        return categoryRepository.findAll();
+    }
 }
