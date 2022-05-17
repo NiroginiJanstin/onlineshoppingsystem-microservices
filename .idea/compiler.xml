@@ -19,8 +19,8 @@
       <module name="api-gateway" target="1.8" />
       <module name="catalog-service" target="11" />
       <module name="cloud-config-server" target="1.8" />
-      <module name="customer-service" target="11" />
-      <module name="identity-service" target="11" />
+      <module name="customer-service" target="1.8" />
+      <module name="identity-service" target="1.8" />
       <module name="service-registry" target="1.8" />
     </bytecodeTargetLevel>
   </component>

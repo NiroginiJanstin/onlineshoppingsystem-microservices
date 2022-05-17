@@ -1,12 +1,17 @@
 package com.shopping.catalogservice.service;
 
+import com.mongodb.BasicDBObject;
 import com.shopping.catalogservice.entity.Category;
+import com.shopping.catalogservice.entity.Product;
 import com.shopping.catalogservice.model.CategoryResponseModel;
 import com.shopping.catalogservice.repository.ICategoryRepository;
 import com.shopping.catalogservice.utils.validation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.aggregation.Aggregation;
+import org.springframework.data.mongodb.core.aggregation.AggregationResults;
+import org.springframework.data.mongodb.core.aggregation.TypedAggregation;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

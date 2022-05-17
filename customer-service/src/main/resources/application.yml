@@ -7,9 +7,6 @@ spring:
   zipkin:
     base-url: http://127.0.0.1:9411/
 
-<<<<<<< HEAD
- 
-=======
   datasource:
     username: root
     password: root
@@ -30,4 +27,3 @@ eureka:
     fetchRegistry: true
     serviceUrl:
       defaultZone: http://eureka-0.eureka.default.svc.cluster.local:8761/eureka
->>>>>>> bc53770659c7a0fb67b75530ff5f5fa1abdb6ec2
