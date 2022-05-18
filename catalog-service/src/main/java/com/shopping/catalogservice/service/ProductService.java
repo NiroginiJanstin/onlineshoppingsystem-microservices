@@ -38,6 +38,7 @@ public class ProductService implements IProductService{
         ProductResponseModel responseModel =  new ProductResponseModel();
         boolean productNameError = validation.emptyFieldValidation(product.getProductName());
         boolean productImageUrlError = validation.emptyFieldValidation(product.getProductImageUrl());
+        boolean productPriceError = product.getPrice() == null ? true : false;
         boolean productCategoryError = validation.emptyFieldValidation(product.getCategoryId());
 
         if(productNameError){
@@ -50,6 +51,11 @@ public class ProductService implements IProductService{
             responseModel.message = "Please provide product image url";
         }
 
+        else if(productPriceError){
+            responseModel.product = null;
+            responseModel.message = "Please provide product price";
+        }
+
         else if(productCategoryError){
             responseModel.product = null;
             responseModel.message = "Please provide product category";
@@ -57,7 +63,7 @@ public class ProductService implements IProductService{
 
         else{
             if(categoryService.getCategoryIds().contains(product.getCategoryId())){
-                Product _product= new Product(product.getProductName(), product.getProductImageUrl(),product.getQty(),product.getDiscount(),product.getCategoryId());
+                Product _product= new Product(product.getProductName(), product.getProductImageUrl(),product.getQty(),product.getPrice(),product.getDiscount(),product.getCategoryId());
                 try{
                     Product result =  productRepository.save(_product);
                     responseModel.product = result;
@@ -94,7 +100,10 @@ public class ProductService implements IProductService{
             if(pro.getQty() != 0){
                 _product.setQty(pro.getQty());
             }
-            if(pro.getDiscount() != 0 || pro.getDiscount() != null){
+            if(pro.getPrice() != null){
+                _product.setPrice(pro.getPrice());
+            }
+            if(pro.getDiscount() != null){
                 _product.setDiscount(pro.getDiscount());
             }
             if(pro.getCategoryId() != ""){

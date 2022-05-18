@@ -10,13 +10,15 @@ public class Product {
     private String productName;
     private String productImageUrl;
     private int qty;
-    private Float discount;
+    private Double price;
+    private Double discount;
     private String categoryId;
 
-    public Product(String productName, String productImageUrl, int qty, Float discount, String categoryId) {
+    public Product(String productName, String productImageUrl, int qty,Double price ,Double discount, String categoryId) {
         this.productName = productName;
         this.productImageUrl = productImageUrl;
         this.qty = qty;
+        this.price = price;
         this.discount = discount;
         this.categoryId = categoryId;
     }
@@ -53,11 +55,19 @@ public class Product {
         this.qty = qty;
     }
 
-    public Float getDiscount() {
+    public Double getPrice() {
+        return price;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
+    }
+
+    public Double getDiscount() {
         return discount;
     }
 
-    public void setDiscount(Float discount) {
+    public void setDiscount(Double discount) {
         this.discount = discount;
     }
 

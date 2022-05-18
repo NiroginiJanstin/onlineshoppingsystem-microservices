@@ -24,7 +24,7 @@ public class ProductController {
     }
 
     @PostMapping("/save")
-    public ResponseEntity<ProductResponseModel> createCategory(@RequestBody Product product) {
+    public ResponseEntity<ProductResponseModel> createProduct(@RequestBody Product product) {
         try{
             return new ResponseEntity<>(productService.create(product), HttpStatus.OK);
         }
@@ -34,7 +34,7 @@ public class ProductController {
     }
 
     @GetMapping("/getById/{id}")
-    public ResponseEntity<ProductResponseModel> getCategoryById(@PathVariable("id") String productId) {
+    public ResponseEntity<ProductResponseModel> getProductById(@PathVariable("id") String productId) {
         try{
             return new ResponseEntity<>(productService.getById(productId), HttpStatus.OK);
         }
@@ -44,7 +44,7 @@ public class ProductController {
     }
 
     @PutMapping("/update/{id}")
-    public ResponseEntity<ProductResponseModel> updateCategory(@PathVariable("id") String productId, @RequestBody Product product) {
+    public ResponseEntity<ProductResponseModel> updateProduct(@PathVariable("id") String productId, @RequestBody Product product) {
         try{
             return new ResponseEntity<>(productService.update(productId,product), HttpStatus.OK);
         }
@@ -55,7 +55,7 @@ public class ProductController {
 
 
     @DeleteMapping("/delete/{id}")
-    public ResponseEntity<ProductResponseModel> deleteCategory(@PathVariable("id") String productId) {
+    public ResponseEntity<ProductResponseModel> deleteProduct(@PathVariable("id") String productId) {
         try{
             return new ResponseEntity<>(productService.delete(productId), HttpStatus.OK);
         }
